@@ -68,7 +68,7 @@
     }
 
     .banner h1 {
-        font-size: 3rem;
+        font-size: 1.8rem;
     }
 
     /* Sejarah */
@@ -106,7 +106,15 @@
     }
 
     .pertandingan h1 {
-        font-size: 2rem;
+        font-size: 2rem; margin-bottom: 5%;
+    }
+
+    .box-pertandingan {
+        margin-bottom: 3%;
+    }
+
+    .pertandingan-btn {
+        margin-bottom: 3%;
     }
 
     .pertandingan-btn a {
@@ -115,20 +123,64 @@
 
     /* Hasil Pertandingan */
     .hasil-pertandingan h1 {
-        font-size: 2rem;
+        font-size: 1.5rem; margin-bottom: 5%;
     }
 
     .hasil-pertandingan img {
         width: 50%;
     }
 
+    .deskripsi-pertandingan i {
+        font-size: 0.7rem;
+    }
+
     /* Klasemen */
     .klasemen h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .klasemen img {
+        width: 80%;
     }
 
     .btn-klasemen a {
         font-size: 0.7rem; letter-spacing: 1px;
+    }
+
+    /* Pemain */
+    .pemain h2 {
+        font-size: 1.5rem; margin-bottom: 5%;
+    }
+
+    .pemain .box .user-image {
+        width: 80%;
+    }
+
+    /* Berita */
+    .berita h1 {
+        font-size: 1.5rem;
+    }
+
+    .berita-content {
+        display: block;
+    }
+    
+    .berita-banner {
+        display: none;
+    }
+
+    /* Mitra */
+    .mitra h1 {
+        font-size: 1.5rem;
+    }
+
+    .mitra-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px 0px;
     }
 }
 
@@ -147,7 +199,15 @@
 
     /* Banner */
     .banner {
-        height: 40vh;
+        height: 30vh;
+    }
+
+    .banner img {
+        width: 15%;
+    }
+
+    .banner h1 {
+        font-size: 1.3rem;
     }
 
     /* Sejarah */
@@ -194,27 +254,93 @@
         font-size: 1.3rem; margin-bottom: 5%;
     }
 
+    .pertandingan h1::after {
+        content: ""; width: 80px; height: 4px; display: block;
+        margin: 10px auto 0; background: white;
+        border-radius: 20px;
+    }
+
     .pertandingan-btn {
         padding: 5% 0;
     }
 
     /* Hasil Pertandingan */
+    .hasil-pertandingan {
+        margin-bottom: 15%;
+    }
+
     .hasil-pertandingan h1 {
         font-size: 1.3rem;
     }
 
+    .hasil-pertandingan h1::after {
+        content: ""; width: 80px; height: 4px; display: block;
+        margin: 10px auto 0; background: black;
+        border-radius: 20px;
+    }
+
+    .deskripsi-pertandingan {
+        margin-top: -10px;
+    }
+
+    .deskripsi-pertandingan i {
+        font-size: 0.5rem;
+    }
+
     /* Klasemen */
+    .klasemen {
+        margin-bottom: 15%;
+    }
+    
     .klasemen h1 {
         font-size: 1.3rem;
     }
 
+    .klasemen h1::after {
+        content: ""; width: 80px; height: 4px; display: block;
+        margin: 10px auto 0; background: black;
+        border-radius: 20px;
+    }
+
+    .klasemen img {
+        margin-bottom: 5%;
+    }
+
     /* Pemain */
+    .pemain h2::after {
+        content: ""; width: 80px; height: 4px; display: block;
+        margin: 10px auto 0; background: black;
+        border-radius: 20px;
+    }
+
     .testimonials-section .slider-wrapper {
         margin: 0 0 30px;
     }
 
     .testimonials-section .swiper-slide-button {
         display: none;
+    }
+
+    /* Berita */
+    .berita {
+        margin-bottom: 15%;
+    }
+
+    .item-content img {
+        width: 50%;
+    }
+
+    .item-content h2 {
+        font-size: 0.7rem;
+    }
+
+    .item-content i {
+        font-size: 0.6rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.6rem;
     }
 }
 
