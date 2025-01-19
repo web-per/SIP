@@ -17,9 +17,12 @@ let swiper = new Swiper(".slider-wrapper", {
     /* Responsive breakpoints */
     breakpoints: {
         0: {
+            slidesPerView: 1,
+        },
+        500: {
             slidesPerView: 2,
         },
-        768: {
+        600: {
             slidesPerView: 3,
         },
         1024: {

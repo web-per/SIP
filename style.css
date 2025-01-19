@@ -311,14 +311,9 @@ section .section-title {
     border-radius: 10px; margin-bottom: 5%;
 }
 
-.pemain .swiper-pagination-bullet {
-    width: 15px; height: 15px; opacity: 1;
-    background: black;
-}
-
 .pemain .swiper-slide-button {
     color: black;
-    margin-top: -50px;
+    margin-top: -80px;
     transition: 0.3s ease;
 }
 

@@ -1,0 +1,157 @@
+@media (max-width: 1201px) {
+    body {
+        margin-top: 10%;
+    }
+
+    /* Header */
+    .header {
+        padding: 10px 10%;
+    }    
+
+    .menu {
+        display: inline-flex;
+    }
+
+    #check:checked~.menu #menu-icon {
+        display: none;
+    }
+
+    #check:checked~.menu #close-icon {
+        display: block;
+    }
+
+    .menu #close-icon {
+        display: none;
+    }
+
+    .navbar {
+        position: absolute; top: 100%; left: 0%;
+        width: 100%; height: 0; transition: 0.3s ease-in-out;
+        overflow: hidden; box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+        background: white;
+    }
+
+    #check:checked~.navbar {
+        height: 20rem;
+    }
+
+    .navbar a {
+        display: block; text-align: center;
+        margin: 1rem 0; transform: translateY(-50px);
+        transition: 0.3s ease; opacity: 0;
+        font-size: 0.8rem; color: black;
+    }
+
+    #check:checked~.navbar a {
+        transform: translateY(0); opacity: 1;
+        transition-delay: calc(.1s * var(--i));
+    }
+
+    .navbar a:hover {
+        border: none; color: rgb(0, 0, 152);
+    }
+
+    .navbar .active {
+        color: rgb(0, 0, 152);
+    }
+
+    .header-kanan i {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sejarah h1 {
+        font-size: 2rem;
+    }
+
+    .sejarah h1::after {
+        content: ""; width: 100px; height: 4px; display: block;
+        margin: 10px auto 0; background: black;
+        border-radius: 20px;
+    }
+
+    .sejarah-content {
+        display: block;
+    }
+
+    .box-content {
+        width: 60%; margin: auto; margin-bottom: 10%;
+    }
+
+    .box-content img {
+        width: 30%;
+    }
+
+    .sejarah-text {
+        width: 100%;
+    }
+
+    .sejarah-text .btn a {
+        font-size: 0.7rem;
+    }
+
+    .stadion h1 {
+        font-size: 2rem;
+    }
+
+    .stadion h2 {
+        font-size: 1rem;
+    }
+
+    .stadion p {
+        margin-bottom: 3%;
+    }
+
+    .stadion .btn {
+        font-size: 0.7rem; margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-top: 20%;
+    }
+
+    .sejarah h1 {
+        font-size: 1.5rem; margin-bottom: 10%;
+    }
+
+    .sejarah h1::after {
+        content: ""; width: 100px; height: 3px; display: block;
+        margin: 10px auto 0; background: black;
+        border-radius: 20px;
+    }
+
+    .box-content {
+        width: 90%;
+    }
+
+    .sejarah-content p {
+        font-size: 0.9rem;
+    }
+
+    .sejarah-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .sejarah-text h3 {
+        font-size: 0.9rem;
+    }
+
+    .stadion h2 {
+        margin-bottom: 5%; text-align: center;
+    }
+
+    .stadion img {
+        margin-bottom: 5%; width: 100%;
+    }
+
+    .stadion p {
+        font-size: 0.9rem; margin-bottom: 10%;
+    }
+
+    .stadion .btn {
+        margin-bottom: 20%;
+    }
+}
