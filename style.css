@@ -100,23 +100,10 @@ section .section-title {
     color: yellow;
 }
 
-.header-kanan {
-    margin-top: 3px;
-}
-
-.header-kanan i {
-    color: white; font-size: 2rem; margin-right: 20px;
-    transition: 0.5s ease;
-}
-
-.header-kanan i:hover {
-    color: yellow;
-}
-
 /* Banner */
 .banner {
     background-image: linear-gradient(rgb(0, 0, 0, 0.45), 
-    rgb(0, 0, 0, 0.45)), url(banner.jpg);
+    rgb(0, 0, 0, 0.45)), url(image/banner.jpg);
     height: 100vh; background-position: top; 
     background-repeat: no-repeat;
     background-size: cover; margin-bottom: 5%;
@@ -128,13 +115,13 @@ section .section-title {
     text-align: center;
 }
 
-.banner img {
-    width: 15%;
+.banner h1 {
+    color: white; font-size: 2rem;
+    text-shadow: 0 0 20px black;
 }
 
-.banner h1 {
-    color: white; font-size: 6rem;
-    text-shadow: 0 0 20px black;
+.banner h2 {
+    color: white; font-size: 4rem;
 }
 
 /* Sejarah */
@@ -145,255 +132,82 @@ section .section-title {
 
 .sejarah {
     display: flex; align-items: center;
-    justify-content: center; gap: 4rem;
+    justify-content: center; width: 80%;
 }
 
 .sejarah-img {
-    width: 20%; padding: 20px;
+    width: 100%;
 }
 
-.text-sejarah {
-    width: 60%;
+.sejarah-img img {
+    width: 100%;
 }
 
 .text-sejarah h2 {
-    color: rgb(0, 0, 152); font-size: 4rem;
+    color: rgb(0, 0, 152); font-size: 3rem;
+    margin-bottom: 2%;
 }
 
 .text-sejarah p {
     text-align: justify; line-height: 30px;
-    margin-bottom: 2%;
-}
-
-.text-sejarah-btn a {
-    background-color: rgb(0, 0, 152);
-    color: white; letter-spacing: 1px;
-    border-radius: 10px; text-align: center; padding: 10px; 
-    transition: 0.3s ease; cursor: pointer;
-    margin-top: 10px;
-}
-
-.text-sejarah-btn a:hover {
-    color: yellow;
-}
-
-/* Pertandingan */
-.pertandingan {
-    background-color: rgb(0, 0, 152); padding: 3% 8%;
-    text-align: center;
-}
-
-.pertandingan h1 {
-    color: white; font-size: 2.5rem; margin-bottom: 2%;
-}
-
-.pertandingan h1::after {
-    content: ""; width: 100px; height: 5px; display: block;
-    margin: 10px auto 0; background: white;
-    border-radius: 20px;
-}
-
-.pertandingan-content {
-    display: flex; justify-content: space-between;
-    margin-bottom: 3%;
-}
-
-.box-pertandingan {
-    width: 32%;
-}
-
-.box-pertandingan img {
-    width: 100%; border-radius: 10px;
-}
-
-.pertandingan-btn {
-    text-align: center;
-}
-
-.pertandingan-btn a {
-    border: 1px solid white;
-    border-radius: 10px; text-align: center; padding: 10px; 
-    transition: 0.3s ease; cursor: pointer;
-    color: white;
-}
-
-.pertandingan-btn a:hover {
-    background-color: white;
-    color: rgb(0, 0, 152);
-}
-
-/* Hasil Pertandingan */
-.hasil-pertandingan {
     margin-bottom: 5%;
 }
 
-.hasil-pertandingan h1 {
-    text-align: center; font-size: 2.5rem;
-    margin-bottom: 3%;
-}
-
-.hasil-pertandingan h1::after {
-    content: ""; width: 100px; height: 5px; display: block;
-    margin: 10px auto 0; background: black;
-    border-radius: 20px;
-}
-
-.hasil-pertandingan {
-    text-align: center;
-}
-
-.hasil-pertandingan img {
-    width: 100%;
-}
-
-.deskripsi-pertandingan {
-    margin-bottom: 1%;
-}
-
-/* Klasemen */
-.klasemen {
-    text-align: center; margin-bottom: 5%;
-}
-
-.klasemen h1 {
-    font-size: 2.5rem; margin-bottom: 3%;
-}
-
-.klasemen h1::after {
-    content: ""; width: 100px; height: 5px; display: block;
-    margin: 10px auto 0; background: black;
-    border-radius: 20px;
-}
-
-.klasemen img {
-    margin-bottom: 3%; width: 100%;
-}
-
-.btn-klasemen a {
-    color: rgb(0, 0, 152); padding: 10px 20px;
-    border: 1px solid rgb(0, 0, 152);
-    border-radius: 10px; transition: 0.3s ease;
-}
-
-.btn-klasemen a:hover {
-    background-color:rgb(0, 0, 152);
-    color: yellow;
-}
-
-/* Pemain Klub */
-.pemain {
+/* Testimonials section styling */
+.testimonials-section {
     margin-bottom: 10%;
 }
 
-.pemain h2 {
-    text-align: center; font-size: 2.5rem; 
-    margin-bottom: 3%;
+.testimonials-section .section-title {
+    font-size: 3rem; margin-bottom: -5%;
 }
 
-.pemain h2::after {
-    content: ""; width: 100px; height: 5px;
-    display: block; margin: 10px auto 0;
-    background: black; border-radius: 20px;
+.testimonials-section .slider-wrapper {
+    overflow: hidden; margin: 0 60px 50px;
 }
 
-.pemain .slider-wrapper {
-    overflow: hidden;  margin: 0 60px 50px;
-}
-
-.pemain .box {
-    user-select: none; display: flex;
+.testimonials-section .testimonial {
+    user-select: none; padding: 35px; display: flex;
     flex-direction: column; justify-content: center;
     align-items: center; text-align: center;
 }
 
-.pemain .box .user-image {
-    width: 100%; object-fit: cover;
-    border-radius: 10px; margin-bottom: 5%;
+.testimonials-section .testimonial .user-image {
+    width: 200px; height: 200px;
+    margin-bottom: 50px; object-fit: cover;
+    border-radius: 10px;
 }
 
-.pemain .swiper-slide-button {
-    color: black;
-    margin-top: -80px;
-    transition: 0.3s ease;
+.testimonials-section .testimonial .name {
+    margin-bottom: 16px;
 }
 
-.pemain .swiper-slide-button:hover {
-    color: rgb(0, 0, 152);
+.testimonials-section .testimonial .feedback {
+    line-height: 25px;
 }
 
-/* Berita */
-.berita {
-    margin-bottom: 5%;
-}
-
-.berita h1 {
-    font-size: 2.5rem; text-align: center;
-    margin-bottom: 3%;
-}
-
-.berita h1::after {
-    content: ""; width: 100px; height: 5px;
-    display: block; margin: 10px auto 0;
-    background: black; border-radius: 20px;
-}
-
-.berita-content {
-    display: flex; gap: 1rem; width: 80%; margin: auto;
-    align-items: center; justify-content: center;
-}
-
-.berita-content img {
-    width: 55%; border-radius: 10px;
-}
-
-.item-content {
-    display: flex; gap: 1rem; padding: 10px;
-    align-items: center;
-}
-
-.item-content img {
-    width: 35%;
-}
-
-.item-content h2 {
-    font-size: 1rem; color: black;
-    margin-bottom: 3%; text-align: justify;
-}
-
-.item-content h2:hover {
-    color: rgb(0, 0, 152);
-}
-
-.item-content i {
+.testimonials-section .swiper-slide-button {
+    margin-top: -50px; transition: 0.3s ease;
     color: black;
 }
 
-/* Mitra */
-.mitra {
-    width: 90%; margin: auto;
+.testimonials-section .swiper-slide-button:hover {
+    color: rgb(0, 0, 152);
 }
 
-.mitra h1 {
-    font-size: 2.5rem; text-align: center;
+/* E-Commerce */
+.e-commerce h1 {
+    font-size: 3rem; text-align: center; margin-bottom: 3%;
 }
 
-.mitra h1::after {
-    content: ""; width: 100px; height: 5px;
-    display: block; margin: 10px auto 0;
-    background: black; border-radius: 20px;
-}
-
-.mitra-content {
+.card-ecommerce {
     display: grid; grid-template-columns: repeat(3, 1fr);
-    margin-top: -2%; align-items: center; text-align: center;
-}
-
-.mitra-content img {
-    width: 60%;
+    width: 80%; margin: auto; gap: 10rem;
 }
 
 /* Footer */
 footer {
-    background-color: rgb(0, 0, 152);
-    padding: 30px 0px; color: white; text-align: center;
+    background-color: rgb(0, 0, 152); display: flex;
+    padding: 20px 0px; color: white;
+    justify-content: space-evenly; align-items: center;
 }

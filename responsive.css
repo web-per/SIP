@@ -1,4 +1,4 @@
-@media (max-width: 1201px) {
+@media (max-width: 1024px) {
     body {
         margin-top: 4%;
     }
@@ -31,7 +31,7 @@
     }
 
     #check:checked~.navbar {
-        height: 20rem;
+        height: 12rem;
     }
 
     .navbar a {
@@ -64,24 +64,32 @@
     }
 
     .banner img {
-        width: 10%;
+        width: 20%;
     }
 
     .banner h1 {
         font-size: 1.8rem;
     }
 
+    .banner h2 {
+        color: white; font-size: 3rem;
+    }
+
     /* Sejarah */
     .sejarah {
         display: block;
-    }
+    }    
 
     .sejarah-img {
-        margin: auto;
+        text-align: center;
+    }
+
+    .sejarah-img img {
+        width: 40%;
     }
 
     .text-sejarah {
-        margin: auto; width: 80%;
+        margin: auto; width: 100%;
     }
 
     .text-sejarah h1, h2 {
@@ -100,82 +108,30 @@
         font-size: 0.8rem;
     }
 
-    /* Pertandingan */
-    .pertandingan {
-        padding: 3% 4%;
+    /* Testimonial */
+    .testimonials-section .section-title {
+        font-size: 2rem; margin-bottom: -10%;
     }
 
-    .pertandingan h1 {
-        font-size: 2rem; margin-bottom: 5%;
+    /* E-Commerce */
+    .e-commerce h1 {
+        font-size: 2rem; margin-bottom: 10%;
     }
 
-    .box-pertandingan {
-        margin-bottom: 3%;
+    .testimonials-section .testimonial .feedback {
+        text-align: justify;
     }
 
-    .pertandingan-btn {
-        margin-bottom: 3%;
+    .card-ecommerce {
+        display: block; text-align: center;
     }
 
-    .pertandingan-btn a {
-        font-size: 0.7rem; letter-spacing: 1px;
+    .card-ecommerce img {
+        width: 30%;
     }
 
-    /* Hasil Pertandingan */
-    .hasil-pertandingan h1 {
-        font-size: 1.5rem; margin-bottom: 5%;
-    }
-
-    .hasil-pertandingan img {
-        width: 50%;
-    }
-
-    .deskripsi-pertandingan i {
-        font-size: 0.7rem;
-    }
-
-    /* Klasemen */
-    .klasemen h1 {
-        font-size: 1.5rem;
-    }
-
-    .klasemen img {
-        width: 80%;
-    }
-
-    .btn-klasemen a {
-        font-size: 0.7rem; letter-spacing: 1px;
-    }
-
-    /* Pemain */
-    .pemain h2 {
-        font-size: 1.5rem; margin-bottom: 5%;
-    }
-
-    .pemain .box .user-image {
-        width: 100%;
-    }
-
-    /* Berita */
-    .berita h1 {
-        font-size: 1.5rem;
-    }
-
-    .berita-content {
-        display: block;
-    }
-    
-    .berita-banner {
-        display: none;
-    }
-
-    /* Mitra */
-    .mitra h1 {
-        font-size: 1.5rem;
-    }
-
-    .mitra-content {
-        grid-template-columns: repeat(2, 1fr);
+    .box-ecommerce {
+        margin-bottom: 5%;
     }
 
     /* Footer */
@@ -186,8 +142,9 @@
 
 @media (max-width: 600px) {
     body {
-        margin-top: 8%;
+        margin-top: 5%;
     }
+
     /* Header */
     .header .header-logo h1 {
         font-size: 1rem;
@@ -208,7 +165,11 @@
 
     /* Sejarah */
     .sejarah-img {
-        width: 30%;
+        width: 100%;
+    }
+
+    .sejarah-img img {
+        width: 50%;
     }
 
     .text-sejarah {
@@ -221,7 +182,6 @@
 
     .text-sejarah h2 {
         font-size: 1.6rem; margin-bottom: 2%;
-        letter-spacing: 3px;
     }
 
     .text-sejarah p {
@@ -233,82 +193,10 @@
         font-weight: bold; text-align: center;
     }
 
-    /* Pertandingan */
-    .pertandingan {
-        padding: 10% 5%;
+    /* Testimoial */
+    .testimonials-section .section-title {
+        font-size: 1.6rem; margin-bottom: -15%;
     }
-
-    .pertandingan-content {
-        display: block;
-    }
-
-    .box-pertandingan {
-        width: 100%; margin-bottom: 5%;
-    }
-
-    .pertandingan h1 {
-        font-size: 1.3rem; margin-bottom: 5%;
-    }
-
-    .pertandingan h1::after {
-        content: ""; width: 80px; height: 4px; display: block;
-        margin: 10px auto 0; background: white;
-        border-radius: 20px;
-    }
-
-    .pertandingan-btn {
-        padding: 5% 0;
-    }
-
-    /* Hasil Pertandingan */
-    .hasil-pertandingan {
-        margin-bottom: 15%;
-    }
-
-    .hasil-pertandingan h1 {
-        font-size: 1.3rem;
-    }
-
-    .hasil-pertandingan h1::after {
-        content: ""; width: 80px; height: 4px; display: block;
-        margin: 10px auto 0; background: black;
-        border-radius: 20px;
-    }
-
-    .deskripsi-pertandingan {
-        margin-top: -10px;
-    }
-
-    .deskripsi-pertandingan i {
-        font-size: 0.5rem;
-    }
-
-    /* Klasemen */
-    .klasemen {
-        margin-bottom: 15%;
-    }
-    
-    .klasemen h1 {
-        font-size: 1.3rem;
-    }
-
-    .klasemen h1::after {
-        content: ""; width: 80px; height: 4px; display: block;
-        margin: 10px auto 0; background: black;
-        border-radius: 20px;
-    }
-
-    .klasemen img {
-        margin-bottom: 5%;
-    }
-
-    /* Pemain */
-    .pemain h2::after {
-        content: ""; width: 80px; height: 4px; display: block;
-        margin: 10px auto 0; background: black;
-        border-radius: 20px;
-    }
-
     .testimonials-section .slider-wrapper {
         margin: 0 0 30px;
     }
@@ -317,38 +205,28 @@
         display: none;
     }
 
-    /* Berita */
-    .berita {
-        margin-bottom: 15%;
-    }
-
-    .berita h1::after {
-        content: ""; width: 80px; height: 4px; display: block;
-        margin: 10px auto 0; background: black;
-        border-radius: 20px;
-    }
-
-    .item-content img {
-        width: 50%;
-    }
-
-    .item-content h2 {
-        font-size: 0.7rem;
-    }
-
-    .item-content i {
-        font-size: 0.6rem;
-    }
-
-    /* Mitra */
-    .mitra h1::after {
-        content: ""; width: 80px; height: 4px; display: block;
-        margin: 10px auto 0; background: black;
-        border-radius: 20px;
-    }
-
     /* Footer */
     footer {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 425px) {   
+    /* Testimonial */
+    .testimonials-section .section-title {
+        margin-bottom: -30%;
+    } 
+
+    /* E-Commerce */
+    .e-commerce {
+        margin-bottom: 10%;
+    }
+
+    .e-commerce h1 {
+        font-size: 1.6rem;
+    }
+
+    .card-ecommerce img {
+        width: 40%;
     }
 }

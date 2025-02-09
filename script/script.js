@@ -3,12 +3,6 @@ let swiper = new Swiper(".slider-wrapper", {
     loop: true,
     grabCursor: true,
     spaceBetween: 25,
-    // Pagination bullets
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-    },
     // Navigation arrows
     navigation: {
         nextEl: ".swiper-button-next",
@@ -22,7 +16,7 @@ let swiper = new Swiper(".slider-wrapper", {
         500: {
             slidesPerView: 2,
         },
-        600: {
+        840: {
             slidesPerView: 3,
         },
         1024: {
